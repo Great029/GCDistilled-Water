@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - GC Distilled Water</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">GC Distilled Water</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Water Sizes</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="departments.html">Departments</a></li>
+      <li><a href="media.html">Media & Seal</a></li>
+      <li><a href="contact.html" class="active">Contact Us</a></li>
+    </ul>
+    <button id="themeToggleBtn" onclick="toggleTheme()">🌙 Dark Mode</button>
+  </nav>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <h1>Get in Touch / Place an Order</h1>
+    <p>Contact our team directly or request doorstep dispenser refill deliveries.</p>
+  </div>
+
+  <!-- Contact Form Section -->
+  <section class="container">
+    <div class="contact-wrapper">
+      
+      <div class="contact-info">
+        <h2>Contact Details</h2>
+        <br>
+        <p><strong>📞 Phone:</strong> +234 800 423 92837 (GC-WATER)</p>
+        <p><strong>📧 Email:</strong> info@gcdistilledwater.com</p>
+        <p><strong>📍 Factory Address:</strong> Plot 12, Industrial Estate, Asaba, Delta State, Nigeria</p>
+        <br>
+        <h3>Operational Hours</h3>
+        <p>Monday – Saturday: 7:00 AM – 6:00 PM</p>
+      </div>
+
+      <form class="contact-form" action="https://formsubmit.co/info@gcdistilledwater.com" method="POST" enctype="multipart/form-data" onsubmit="return validateForm()">
+        <h3>Send Us a Message</h3>
+        
+        <label for="name">Full Name *</label>
+        <input type="text" id="name" name="name" placeholder="John Doe">
+        <div id="nameError" class="error-msg"></div>
+
+        <label for="email">Email Address *</label>
+        <input type="email" id="email" name="email" placeholder="example@mail.com">
+        <div id="emailError" class="error-msg"></div>
+
+        <label for="department">Target Department</label>
+        <select name="department" id="department">
+          <option value="General Enquiries">General Enquiries</option>
+          <option value="Driver's Department (Delivery)">Driver’s Department (Deliveries)</option>
+          <option value="Accounting Department">Accounting Department</option>
+          <option value="Production Department">Production Department</option>
+          <option value="Security Department">Security Department</option>
+        </select>
+
+        <label for="message">Message / Water Order Details *</label>
+        <textarea id="message" name="message" rows="4" placeholder="Specify your requested sizes (e.g., 2 x 19L Dispenser Bottles)..."></textarea>
+        <div id="messageError" class="error-msg"></div>
+
+        <label for="attachment">Attach File / Purchase Order (Optional)</label>
+        <input type="file" id="attachment" name="attachment">
+
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="thank-you.html">
+
+        <button type="submit" class="btn btn-submit">Submit Order Inquiry</button>
+      </form>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 GC Distilled Water. All Rights Reserved. | CSC 122 Web Technology</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

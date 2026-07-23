@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media & Quality Seal - GC Distilled Water</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">GC Distilled Water</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Water Sizes</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="departments.html">Departments</a></li>
+      <li><a href="media.html" class="active">Media & Seal</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+    <button id="themeToggleBtn" onclick="toggleTheme()">🌙 Dark Mode</button>
+  </nav>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <h1>Multimedia & Verification Seal</h1>
+    <p>Listen to our company audio presentation and inspect our dynamic quality seal.</p>
+  </div>
+
+  <!-- Multimedia Section -->
+  <section class="container">
+    <div class="multimedia-grid">
+      
+      <div class="media-box">
+        <h3>🎵 Company Audio Presentation</h3>
+        <p style="margin-bottom: 15px;">Listen to our brand message and plant guidelines:</p>
+        <audio controls>
+          <source src="audio.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+
+      <div class="media-box">
+        <h3>🎨 Official Quality Seal (HTML5 Canvas)</h3>
+        <p style="margin-bottom: 15px;">Dynamic seal rendered via standard HTML5 Canvas graphics:</p>
+        <canvas id="qualityCanvas" width="280" height="150"></canvas>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 GC Distilled Water. All Rights Reserved. | CSC 122 Web Technology</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
